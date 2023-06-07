@@ -4,16 +4,17 @@
 
 ## :scroll: Содержание:
 
-- [Стек используемых технологий](#используемый-стек)
-- [Реализованные проверки](#Реализованные-проверки)
-- [Запуск автотестов](#запуск-автотестов)
-- [Сборка в Jenkins](#сборка-в-jenkins)
-- [Пример Allure-отчета](#пример-allure-отчета)
-- [Интеграция с Allure TestOps](#интеграция-с-allure-testOps)
-- [Интеграция с Jira](#интеграция-с-jira)
-- [Уведомления в Telegram с использованием бота](#уведомления-в-telegram)
-- [Видео примера запуска тестов в Selenoid](#видео-примера-запуска-теста-в-selenoid)
+- <a href="#tools"> Стек используемых технологий</a>
+- <a href="#checking"> Реализованные проверки</a>
+- <a href="#console"> Запуск автотестов</a>
+- <a href="#jenkins"> Сборка в Jenkins</a>
+- <a href="#allureReport"> Пример Allure-отчета</a>
+- <a href="#allure"> Интеграция с Allure TestOps</a>
+- <a href="#jira"> Интеграция с Jira</a>
+- <a href="#tg"> Уведомления в Telegram с использованием бота</a>
+- <a href="#video"> Видео примера запуска тестов в Selenoid</a>
 
+<a id="tools"></a>
 ## :computer: Стек используемых технологий
 
 <p align="center">
@@ -45,6 +46,7 @@
 * Логи браузерной консоли;
 * Видео выполнения автотеста.
 
+<a id="checking"></a>
 ## :male_detective:: Реализованные проверки
 
 Автаматизированные тесты
@@ -62,7 +64,7 @@
 - ✓ Наличие Лицензии
 - ✓ Открытие почтового агента
 - ✓ Открытие страницы Люди
-
+  <a id="console"></a>
 ## :arrow_forward: Запуск автотестов
 
 ### Запуск тестов из терминала
@@ -85,7 +87,7 @@ test
 ```
 clean gradle test -Denv='remote'
 ```
-
+<a id="jenkins"></a>
 ## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logo/Jenkins.svg"> </a> Сборка в <a target="_blank" href="https://jenkins.autotests.cloud/job/018_Kontur.ru_KuryshevaAR/"> Jenkins </a>
 
 Для запуска сборки необходимо перейти в раздел <code>Собрать с параметрами</code>, выбрать необходимые параметры и нажать кнопку <code>Собрать</code>.
@@ -100,6 +102,7 @@ clean gradle test -Denv='remote'
 </p>
 После выполнения сборки, в блоке <code>История сборок</code> напротив номера сборки появятся значки <code>Allure Report</code> и <code>Allure TestOps</code>, при клике на которые откроется страница с сформированным html-отчетом и тестовой документацией соответственно.
 
+<a id="allureReport"></a>
 ## <img width="4%" style="vertical-align:middle" title="Allure Report" src="media/logo/Allure_Report.svg"> </a> Пример <a target="_blank" href="https://jenkins.autotests.cloud/job/018_Kontur.ru_KuryshevaAR/4/allure/"> Allure-отчета </a>  
 ### Overview
 
@@ -107,6 +110,7 @@ clean gradle test -Denv='remote'
 <img title="Allure Overview" src="media/screens/allure.png">
 </p>
 
+<a id="allure"></a>
 ## <img width="4%" style="vertical-align:middle" title="Allure TestOps" src="media/logo/AllureTestOps.svg"> </a> Интеграция с <a target="_blank" href="https://allure.autotests.cloud/project/2238/dashboards"> Allure TestOps </a> 
 
 На *Dashboard* в <code>Allure TestOps</code> видна статистика количества тестов: сколько из них добавлены и проходятся вручную, сколько автоматизированы. Новые тесты, а так же результаты прогона приходят по интеграции при каждом запуске сборки.
@@ -126,6 +130,7 @@ clean gradle test -Denv='remote'
 <img title="Allure Tests" src="media/screens/launches.png">
 </p>
 
+<a id="jira"></a>
 ## <img width="4%" style="vertical-align:middle" title="Jira" src="media/logo/Jira.svg"> </a> Интеграция с <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-694"> Jira </a> 
 
 Реализована интеграция <code>Allure TestOps</code> с <code>Jira</code>, в тикете отображается, какие тест-кейсы были написаны в рамках задачи и результат их прогона.
@@ -134,6 +139,7 @@ clean gradle test -Denv='remote'
 <img title="Jira Task" src="media/screens/Jira.png">
 </p>
 
+<a id="tg"></a>
 ## <img width="4%" style="vertical-align:middle" title="Telegram" src="media/logo/Telegram.svg"> Уведомления в Telegram с использованием бота
 
 После завершения сборки специальный бот, созданный в <code>Telegram</code>, автоматически обрабатывает и отправляет сообщение с отчетом о прогоне тестов.
@@ -142,6 +148,7 @@ clean gradle test -Denv='remote'
 <img width="70%" title="Telegram Notifications" src="media/screens/Bot.png">
 </p>
 
+<a id="video"></a>
 ## <img width="4%" style="vertical-align:middle" title="Selenoid" src="media/logo/Selenoid.svg"> Видео примера запуска тестов в Selenoid
 
 В отчетах Allure для каждого теста прикреплен не только скриншот, но и видео прохождения теста
