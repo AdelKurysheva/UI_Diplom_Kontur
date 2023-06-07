@@ -9,8 +9,8 @@ import static io.qameta.allure.Allure.step;
 public class ContactsPage {
     private final SelenideElement
             contactsPage = $("a[href*='/contacts']"),
-            companyDetails=$(".button_secondary.m-r-0.m-r-sm-3"),
-            companyAddress=$(".section-block__content");
+            companyDetails = $(".button_secondary.m-r-0.m-r-sm-3"),
+            companyAddress = $(".section-block__content");
 
     public ContactsPage selectContactsPage() {
         step("Открываем страницу 'Контакты'", () -> {

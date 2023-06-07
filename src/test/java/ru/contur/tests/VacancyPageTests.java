@@ -19,6 +19,7 @@ public class VacancyPageTests extends TestBase {
                 .selectCity()
                 .checkCityName();
     }
+
     @Test
     @Owner("Курышева Адэль")
     @DisplayName("Проверка наличия почтового адреса на странице 'Вакансии'")

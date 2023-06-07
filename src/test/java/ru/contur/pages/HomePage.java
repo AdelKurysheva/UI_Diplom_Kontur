@@ -10,6 +10,7 @@ public class HomePage {
         });
         return this;
     }
+
     public HomePage openCareerPage() {
         step("Открываем страницу поиска вакансий", () -> {
             open("/career");
