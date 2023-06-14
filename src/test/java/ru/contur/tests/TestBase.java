@@ -11,12 +11,20 @@ import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import ru.contur.config.WebConfig;
 import ru.contur.helpers.Attach;
+import ru.contur.pages.*;
 
 import java.util.Map;
 
 import static com.codeborne.selenide.Configuration.remote;
 
 public class TestBase {
+    HomePage newHomePage = new HomePage();
+    CandidatesPage newCandidatesPage = new CandidatesPage();
+    ContactsPage newContactsPage = new ContactsPage();
+    StudentsPage newStudentsPage = new StudentsPage();
+    VacancyPage newVacancyPage = new VacancyPage();
+    NewsPage newNewsPage = new NewsPage();
+
     static WebConfig webConfig = ConfigFactory.create(WebConfig.class, System.getProperties());
 
     @BeforeAll

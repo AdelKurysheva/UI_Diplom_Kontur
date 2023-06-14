@@ -1,13 +1,10 @@
 package ru.contur.tests;
 
 import io.qameta.allure.Owner;
-import ru.contur.pages.*;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class VacancyPageTests extends TestBase {
-    HomePage newHomePage = new HomePage();
-    VacancyPage newVacancyPage = new VacancyPage();
 
     @Test
     @Owner("Курышева Адэль")

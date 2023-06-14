@@ -1,13 +1,13 @@
 plugins {
     id 'java-library'
     id 'java'
-    id ('io.qameta.allure') version '2.11.2'
+    id('io.qameta.allure') version '2.11.2'
 }
 
 group 'guru.qa'
 version '1.0-SNAPSHOT'
 
-allure{
+allure {
     report {
         version.set("2.19.0")
     }
@@ -30,18 +30,14 @@ repositories {
         options.encoding = 'UTF-8'
     }
 }
-compileJava{
-    options.encoding='UTF-8'
-}
-
-compileTestJava{
-    options.encoding='UTF-8'
+compileJava {
+    options.encoding = 'UTF-8'
 }
 tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
 dependencies {
-    testImplementation (
+    testImplementation(
             "com.codeborne:selenide:6.11.2",
             "com.github.javafaker:javafaker:1.0.2",
             "org.junit.jupiter:junit-jupiter:5.9.2",
