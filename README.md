@@ -85,7 +85,7 @@ test
 ```
 или
 ```
-clean gradle test -Denv='remote'
+gradle clean test -Denv='remote'
 ```
 <a id="jenkins"></a>
 ## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logo/Jenkins.svg"> </a> Сборка в <a target="_blank" href="https://jenkins.autotests.cloud/job/018_Kontur.ru_KuryshevaAR/"> Jenkins </a>
