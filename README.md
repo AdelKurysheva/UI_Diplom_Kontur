@@ -85,10 +85,10 @@ test
 ```
 или
 ```
-clean gradle test -Denv='remote'
+gradle clean test -Denv='remote'
 ```
 <a id="jenkins"></a>
-## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logo/Jenkins.svg"> </a> Сборка в <a target="_blank" href="https://jenkins.autotests.cloud/job/018_Kontur.ru_KuryshevaAR/"> Jenkins </a>
+## <img width="4%" style="vertical-align:middle" title="Jenkins" src="media/logo/Jenkins.svg"> </a> Сборка в <a target="_blank" href="https://jenkins.autotests.cloud/job/Students/job/018_Kontur.ru_KuryshevaAR/"> Jenkins </a>
 
 Для запуска сборки необходимо перейти в раздел <code>Собрать с параметрами</code>, выбрать необходимые параметры и нажать кнопку <code>Собрать</code>.
 #### :hammer_and_wrench:: Параметры сборки в Jenkins:
